@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="warna">
+      Saran
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-item>
+    <ion-label color="primary" floating>Nama</ion-label>
+    <ion-input [(ngModel)]="data.nama"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" stacked>Saran</ion-label>
+    <ion-textarea placeholder="Pendapat anda" [(ngModel)]="data.pendapat"></ion-textarea>
+  </ion-item> <ion-button  expand="block" routerLink="/saransaya" routerDirection="root">
+    Submit 
+  </ion-button>
+</ion-content>
